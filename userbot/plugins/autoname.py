@@ -20,7 +20,7 @@ async def _(event):
     while True:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%H:%M")
-        name = f"🕒{HM} ⚡{DEFAULTUSER}⚡ {DM} 🗓️"
+        name = f"{HM}{DEFAULTUSER}|{HM}"
         logger.info(name)
         try:
             await borg(
@@ -39,4 +39,4 @@ async def _(event):
         #     "Successfully Changed Profile Name"
         # )
         await asyncio.sleep(DEL_TIME_OUT)
-    await event.edit(f"Auto Name has been started...")
+    await event.edit(f"Autoname başladı")
